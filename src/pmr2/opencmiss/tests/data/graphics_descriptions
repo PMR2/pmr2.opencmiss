@@ -1,0 +1,46 @@
+{
+   "1" : {
+      "CoordinateField" : "coordinates",
+      "ElementFaceType" : -1,
+      "FieldDomainType" : 16,
+      "Material" : "default",
+      "RenderLineWidth" : 1,
+      "RenderPointSize" : 1,
+      "RenderPolygonMode" : 1,
+      "Scenecoordinatesystem" : 1,
+      "SelectMode" : 1,
+      "SelectedMaterial" : "default_selected",
+      "Surfaces" : {},
+      "Tessellation" : "default",
+      "Type" : "SURFACES"
+   },
+   "2" : {
+      "ElementFaceType" : -1,
+      "FieldDomainType" : 1,
+      "Material" : "default",
+      "PointAttributes" : {
+         "BaseSize" : [ 0, 0, 0 ],
+         "Font" : "default",
+         "Glyph" : "point",
+         "GlyphOffset" : [ 0, 0, 0 ],
+         "GlyphRepeatMode" : 1,
+         "GlyphShapeType" : 15,
+         "LabelOffset" : [ 0, 0, 0 ],
+         "LabelText" : [ "", "", "" ],
+         "ScaleFactors" : [ 1, 1, 1 ]
+      },
+      "Points" : {},
+      "RenderLineWidth" : 1,
+      "RenderPointSize" : 1,
+      "RenderPolygonMode" : 1,
+      "SamplingAttributes" : {
+         "ElementPointSamplingMode" : 1,
+         "Location" : [ 0, 0, 0 ]
+      },
+      "Scenecoordinatesystem" : 1,
+      "SelectMode" : 1,
+      "SelectedMaterial" : "default_selected",
+      "Tessellation" : "default_points",
+      "Type" : "POINTS"
+   }
+}
