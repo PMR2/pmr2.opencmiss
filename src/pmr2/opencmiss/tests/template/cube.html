@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cube demo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            body {
+                font-family: Monospace;
+                background-color: #000;
+                color: #fff;
+                margin: 0px;
+                overflow: hidden;
+            }
+            #info {
+                color: #fff;
+                position: absolute;
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                z-index: 100;
+                display:block;
+            }
+            #info a, .button {
+                color: #f00;
+                font-weight: bold;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            #zinc_webgl_viewer {
+                width: 800px;
+                height: 600px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id='myText'>Cube demo</p>
+        <button name="Reset View" value="OK" type="button" onclick="resetView()">Reset View</button>
+
+        <!-- viewer with hard-coded data-src for testing purpose -->
+        <div id="zinc_webgl_viewer" data-src="../data/cube.test_to_threejs.result.json"></div>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="../../resource/js/three.min.js"></script>
+        <script src="../../resource/js/zinc_threejs_control.js"></script>
+        <script src="../../resource/js/pmr2.opencmiss.js"></script>
+    </body>
+</html>
