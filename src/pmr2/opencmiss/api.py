@@ -4,7 +4,7 @@ from opencmiss.zinc.context import Context
 from opencmiss.zinc.sceneviewer import Sceneviewer
 
 
-def to_threejs(region_data, graphics_description, subregion_path=''):
+def _to_threejs(region_data, graphics_description, subregion_path=''):
     """
     Turns the input ``region_data`` and ``graphics_description`` into
     ThreeJS compatible JSON.
@@ -51,3 +51,7 @@ def to_threejs(region_data, graphics_description, subregion_path=''):
         "scene": json.loads(scene_buffer),
         "viewer_settings": viewer_settings,
     }
+
+def to_threejs(region_data, graphics_description, subregion_path=''):
+    return json.dumps(
+        _to_threejs(region_data, graphics_description, subregion_path))
