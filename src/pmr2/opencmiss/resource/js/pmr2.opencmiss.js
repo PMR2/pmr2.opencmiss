@@ -22,7 +22,7 @@ var timeEnabled = false;
 var morphColour = [false];
 
 // TODO determine these from input.
-var modelsColours=[0x7F1F1A];
+var modelsColours=[0x9F2F2A];
 var num_of_mesh = 1;
 
 var zincCameraControls;
@@ -36,7 +36,8 @@ $(document).ready(function() {
         return
     }
 
-    $.get(viewer.data('src'), function(data) {
+    // TODO ensure this is a POST to the generation endpoint.
+    $.getJSON(viewer.data('src'), function(data) {
         init(viewer, data);
         animate();
     });
@@ -125,10 +126,10 @@ function init(container, data) {
       
     projector = new THREE.Projector();
     scene = new THREE.Scene();
-    var ambient = new THREE.AmbientLight( 0x101010 );
+    var ambient = new THREE.AmbientLight( 0x171717 );
     scene.add(ambient);
 
-    directionalLight = new THREE.DirectionalLight(0xC0C0C0);
+    directionalLight = new THREE.DirectionalLight(0xE0E0E0);
     directionalLight.position.set(
         viewer_settings.eye_position[0],
         viewer_settings.eye_position[1],
